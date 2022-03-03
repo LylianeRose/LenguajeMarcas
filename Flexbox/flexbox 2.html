@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"> 
+    <title>Flex1</title>
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: grey;
+            padding: 1em;
+            border: thick solid red;
+        }
+
+        div{
+            height: 15vw;
+            width: 15vw;
+            background-color: blue;
+        }
+        .central{
+            height: 15vw;
+            width: 50vw;
+        }
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <h1>Flexbox 1</h1>
+    <section class="container">
+        <div></div>
+        <div class="central"></div>
+        <div></div>
+    </section>
+
+</body>
+
+</html>
