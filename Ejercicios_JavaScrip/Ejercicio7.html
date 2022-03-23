@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <title>Flexbox 8</title>
+    <!--Metadatos-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+</head>
+<style>
+
+    i{
+        margin: 10px;
+    }
+    input{
+        margin: 10px
+        ;
+    }
+</style>
+
+<html>
+    <body>
+        
+        <h2>Ejercicio7</h2>
+        <h3>Psychotecnical tesr</h3>
+
+        <p>
+            Find a relation between the following animals and delate the worng one:
+        </p>
+
+        <img class="imagen" id="id1" src=pez.png height="80px">
+        <p class="boton"> <button type="button" onclick="desaparecer()"> Delete</button></p>
+        
+        <img class="imagen" id="id2" src="caballo.png" height="80px">
+
+        <p class="boton"> <button type="button" onclick="desaparecer2()"> Delete</button></p>
+        
+        <img class="imagen" id="id3" src="pajaro.png" height="80px">
+        <p class="boton"> <button type="button" onclick="desaparecer3()"> Delete</button></p>
+        
+        <img class="imagen" id="id4" src="ara%C3%B1a.png" height="80px">
+        <p class="boton"> <button type="button" onclick="desaparecer4()"> Delete</button></p>
+        </div>
+
+        <br>
+
+            <script>
+                function desaparecer(){
+                    document.getElementById('id1').style.display = "none";
+                }
+                function desaparecer2(){
+                    document.getElementById('id2').style.display = "none";
+                }
+                function desaparecer3(){
+                    document.getElementById('id3').style.display = "none";
+                } 
+                function desaparecer4(){
+                    document.getElementById('id4').style.display = "none";
+                } 
+
+            </script>
+  
+    </body>
+
+</html>

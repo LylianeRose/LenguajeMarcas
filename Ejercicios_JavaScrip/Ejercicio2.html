@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Ejercicio2</h2>
+    <h3>What Can Javascript do?</h3>
+    <p id="demo"></p>
+   
+
+    <p id="id2">
+
+        Javascript es lo mejor
+    </p>       
+    <button type="buttom" onclick="nuevoformato('orange','35px')">
+        click Me!
+    </buttom>
+    
+    <script>
+
+        const dia = new Date();
+        document.getElementById('demo').innerHTML = dia;
+        function nuevoformato(color1,tamany1) 
+        {
+            let obj1 = document.getElementById('id2');
+            obj1.style.backgroundColor = color1;
+            obj1.style.fontSize = tamany1;
+
+
+        }
+
+    </script>
+
+</body>
+</html>

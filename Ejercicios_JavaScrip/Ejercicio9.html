@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <h2>Ejercicio9</h2>
+        
+        <p>
+            JavaScript es el lenguaje de programación que debes usar para añadir características 
+            interactivas a tu sitio web, (por ejemplo, juegos, eventos que ocurren cuando los botones 
+            son presionados o los datos son introducidos en los formularios, 
+            efectos de estilo dinámicos, animación, y mucho más).
+        </p>
+
+        <p id="oculto">
+
+            Javascript es un lenguaje de programación Script, creado por la empresa Netscape, 
+            y cuya principal función es incluir contenido “dinámico” a las páginas web. ...
+             Estos ejemplos serán muy útiles para incluirlos en páginas Webs,
+             ya que realizan acciones que únicamente con HTML serían imposibles de crear.
+        </p>
+        <input type="button" onclick="Mostrar(this)" value="Read More" id="id3">
+
+        <script>
+
+            document.getElementById('oculto').style.display='none';
+
+            function Mostrar()
+            {
+                document.getElementById('oculto').style.display='block';
+                document.getElementById('id3').style.display='none';
+            }
+            
+        </script>
+  
+    </body>
+
+</html>

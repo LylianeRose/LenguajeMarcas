@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    
+    <body>
+
+    <h1>Calculate how much rent you can pay according to your salary</h1>
+
+
+
+    <p>To have a nice and relaxing life the value of your rent
+        must be less than 40% of your income. </p>
+
+    <p>Enter your monthly income</p>
+
+    <input type="text" id="valor">
+    <button type ="button" onclick="renta()" style="margin: 25px;">check</button>
+    
+    <p id="renta"></p>
+    <script>
+
+        
+        function renta()
+        {
+            let porcentaje = document.getElementById("valor").value;
+            if(porcentaje<0){
+                window.alert("dato incorrecto");
+            }else{
+                document.getElementById("renta").innerHTML="Your rent be as maximun "+ ((porcentaje*40)/100) + " euros";
+            } 
+        }
+
+    </script>
+
+    </body>
+
+</html>

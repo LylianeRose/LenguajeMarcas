@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>HTML</p>
+
+<p id="cambio">
+
+    Html es un lenguaje estandar de creacion de paginas Web. 
+    Nos desarrolla una estructura legible y 
+    en ocasiones bonita para el programador.
+</p>
+
+<p>Introduce el tamaño de fuente:</p>
+<input id="id1">
+<button type ="button" onclick="myFunction()">Submit</button>
+
+
+<script>
+    function myFunction() 
+    {
+    let number = document.getElementById("id1").value+'px';
+    document.getElementById("cambio").style.fontSize=number;
+    
+    }
+
+</script>
+
+</body>
+</html>

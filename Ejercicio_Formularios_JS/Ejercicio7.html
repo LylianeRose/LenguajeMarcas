@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    
+    <body>
+
+    <h1>Vamos a dar unas clases de ingles</h1>
+
+
+
+    <p>Where <input id="1"> from?</p>
+
+    <p>What's <input id="2"> ? . It's a Ipod</p>
+
+    <p><input id="3"> your dad born in Madrid?</p>
+
+    <p>Today's <input id="4"> than yesterday</p>
+
+    
+
+    <button type ="button" onclick="Comprobar()" style="margin: 25px;">check</button>
+    
+    <section id="cuadro" style="border: thick double red;">
+
+       <div style="padding: 10px;">
+        
+            <p>Check your answers.
+            Shorty one of our teacher will contact you.
+            </p>
+            <br>
+
+                <p id="fra1"></p>
+                <p id="fra2"></p>
+                <p id="fra3"></p>
+                <p id="fra4"></p>
+       </div> 
+
+    </section>
+
+    <script>
+
+
+        document.getElementById('cuadro').style.display='none';
+
+        function Comprobar() 
+        {
+            let frase1=document.getElementById('1').value;
+            frase1;
+            
+
+            let frase2=document.getElementById('2').value;
+            frase2;
+
+            let frase3=document.getElementById('3').value;
+            frase3;
+
+            let frase4=document.getElementById('4').value;
+            frase4;
+
+            document.getElementById('cuadro').style.display='block';
+
+            let prefijo = "<span style='color:blue;font-weight:bold'>";
+            let sufijo = "</span>";    
+
+            document.getElementById('fra1').innerHTML="where  "+prefijo+frase1+sufijo+" from?";
+            document.getElementById('fra2').innerHTML="What's "+prefijo+frase2+sufijo+" ?. It`s a Ipod";
+            document.getElementById('fra3').innerHTML=prefijo+frase3+sufijo+" your dad born in Madrid?";
+            document.getElementById('fra4').innerHTML="Todays's "+prefijo+frase4+sufijo+" than yesterday?";
+        }
+
+    </script>
+
+    </body>
+
+</html>

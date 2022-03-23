@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Vamos a sacar un rango entre dos numeros</h1>
+
+
+<p>Numero inferior</p>
+<input id="inferior">
+
+
+<p>Numero superior</p>
+<input id="superior">
+
+<p id ="resultado">
+
+</p>
+<button type ="button" onclick="Rango()" style="margin: 10px;">Aply</button>
+
+
+
+<script>
+
+    function Rango() 
+    {
+        var min =document.getElementById('inferior').value;
+        min;
+
+        var sup =document.getElementById('superior').value;
+        sup;
+        document.getElementById('resultado').innerHTML=Math.floor((Math.random()*(sup-min))+min);
+
+    }
+</script>
+
+</body>
+</html>

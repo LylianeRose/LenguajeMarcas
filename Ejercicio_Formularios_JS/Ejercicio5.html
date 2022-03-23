@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Write your story</h1>
+
+
+<p>Introduce el titulo de la Historia:</p>
+<input id="titulo">
+
+
+<p>Introduce la historia;</p>
+<input type="text" id="historia" style="width: 300px; height: 50px;">
+
+<p>Introduce la URL de la historia;</p>
+<input id="foto">
+<br>
+
+
+<button type ="button" onclick="Imaginate()" style="margin: 10px;">Aply</button>
+
+<!--Creamos seccion vacia para rellenar la historia-->
+
+<section id="cuento">
+
+    <h1 id="title"></h1>
+    <p id="text"></p>
+    <img id = "image" src="" alt="">
+
+</section>
+
+<script>
+
+    document.getElementById('cuento').style.display='none';
+
+    function Imaginate() 
+    {
+        let Title =document.getElementById('titulo').value;
+        Title;
+
+        let histo =document.getElementById('historia').value;
+        histo;
+
+        let url =document.getElementById('foto').value;
+        url;
+
+
+        document.getElementById("cuento").style.display='block';
+        document.getElementById("cuento").style.border='solid 1px black';
+
+        document.getElementById("title").innerHTML=Title;
+        document.getElementById("text").innerHTML=histo;
+
+        document.getElementById("image").src=url;
+
+    }
+</script>
+
+</body>
+</html>

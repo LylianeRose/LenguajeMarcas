@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+    <style>
+
+
+    </style>
+
+    <body>
+        <h2>Ejercicio4</h2>
+        <h3>Select a template fro this text</h3>
+
+        <div id="fondo">
+
+            <div id="titulo">
+                <p >title</p>
+                <p>subtitle</p>
+                <p >This is a example of a praragragh</p>
+
+            </div>
+            
+
+        </div>
+
+        <button type="buttom" onclick="Template1('purple','center','orange')">
+           Template 1
+        </buttom>
+        <button type="buttom" onclick="Template2('yellow','left', 'gray')">
+            Template 2
+        </buttom>
+        <button type="buttom" onclick="Template3('blue','right','white')">
+            Template 3
+        </buttom>
+
+        
+    
+        <script>
+            function Template1(fondo,valor,color)
+            {
+                let obj1 = document.getElementById('fondo');
+                let obj2 = document.getElementById('titulo');
+                obj1.style.backgroundColor = fondo;
+                obj2.style.textAlign = valor;
+                obj2.style.color = color;
+
+            }
+
+            function Template2(fondo,valor,color)
+            {
+                let obj1 = document.getElementById('fondo');
+                let obj2 = document.getElementById('titulo');
+                obj1.style.backgroundColor = fondo;
+                obj2.style.textAlign = valor;
+                obj2.style.color = color;
+
+
+            }
+
+            function Template3(fondo,valor,color)
+            {
+                let obj1 = document.getElementById('fondo');
+                let obj2 = document.getElementById('titulo');
+                obj1.style.backgroundColor = fondo;
+                obj2.style.textAlign = valor;
+                obj2.style.color = color;
+            }
+
+        
+
+
+
+        </script>
+        
+    
+
+    </body>
+
+</html>

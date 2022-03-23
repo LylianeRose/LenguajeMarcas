@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+    <style>
+
+
+
+        div{
+            width: 200px; 
+            height: 200px; 
+            margin: 10px;
+            background-color: white;
+        }
+        #rojo{
+            display: inline-block;
+            border: thick solid red;
+            border-color: red;
+        }
+        #azul{
+            display: inline-block;
+            border: thick solid blue;
+            border-color: blue;
+        }
+        #amarillo{
+            display: inline-block;
+            border: thick solid yellow;
+            border-color: yellow;
+        }
+        #verde{
+            display: inline-block;
+            border:  thick solid green;
+            border-color: green;
+        }
+    </style>
+
+    <body>
+        <h2>Ejercicio3</h2>
+        <h3>The Border Property?</h3>
+
+        <div id="rojo" onmouseover="rojo('red')" onmouseout="rojo('white')"> </div>
+        <div id="verde" onmouseover="verde('green')" onmouseout="verde('white')"> </div>
+        <div id="azul" onmouseover="azul('blue')" onmouseout="azul('white')"> </div>
+        <div id="amarillo" onmouseover="amarillo('yellow')" onmouseout="amarillo('white')"> </div>
+    
+        <script>
+            function rojo(fondo)
+            {
+                let obj1 = document.getElementById('rojo');
+                obj1.style.backgroundColor = fondo;
+
+            }
+
+            function verde(fondo)
+            {
+                let obj1 = document.getElementById('verde');
+                obj1.style.backgroundColor = fondo;
+
+            }
+
+            function amarillo(fondo)
+            {
+                let obj1 = document.getElementById('amarillo');
+                obj1.style.backgroundColor = fondo;
+
+            }
+
+            function azul(fondo)
+            {
+                let obj1 = document.getElementById('azul');
+                obj1.style.backgroundColor = fondo;
+
+            }
+
+
+
+        </script>
+        
+    
+
+    </body>
+
+</html>

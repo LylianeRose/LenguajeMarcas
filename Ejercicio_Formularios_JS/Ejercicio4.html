@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <style>
+         div{
+            width: 200px; 
+            height: 200px; 
+            margin: 10px;
+            background-color: white;
+        }
+        #rojo{
+            display: inline-block;
+            border: thick solid red;
+            border-color: red;
+        }
+        #azul{
+            display: inline-block;
+            border: thick solid blue;
+            border-color: blue;
+        }
+    </style>
+<body>
+
+<p>HTML</p>
+
+<p >
+HTML is the starndard markup language for creating Web pages
+</p>
+<div id="rojo"> </div>
+<div id="azul"> </div>
+
+
+<p>Introduce el tamaño del cuadrado rojo:</p>
+<input id="id1">
+<p>Introduce el tamaño del cuadrado azul;</p>
+<input id="id2">
+<br>
+<button type ="button" onclick="tamaño1()" style="margin: 10px;">Aply</button>
+
+
+<script>
+    function tamaño1() 
+    {
+        let number = document.getElementById("id1").value+'px';
+        let number1 = document.getElementById("id2").value+'px';
+
+        document.getElementById("rojo").style.height=number;
+        document.getElementById("rojo").style.width=number;
+
+        document.getElementById("azul").style.height=number1;
+        document.getElementById("azul").style.width=number1;
+        
+    }
+</script>
+
+</body>
+</html>

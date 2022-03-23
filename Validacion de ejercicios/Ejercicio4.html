@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    
+    <body>
+
+    <h1>Calculate how much rent you can pay according to your salary</h1>
+
+
+
+    <p>To have a nice and relaxing life the value of your rent
+        must be less than 40% of your income. </p>
+
+    <p>Enter your monthly income</p>
+
+    <p>introduce un precio</p>
+    <input type="text" id="precio">
+    
+    <p>introduce un descuento</p>
+    <input type="text" id="descuento">
+
+    <button type ="button" onclick="Final()" style="margin: 25px;">calculate</button>
+    
+    <p id="renta"></p>
+    <script>
+
+
+        function Final()
+        {
+            let descuento = document.getElementById("descuento").value;
+            let precio = document.getElementById("precio").value;
+            if(descuento<0){
+                window.alert("El descuento no puede ser cero");
+            }
+            if(precio<0){
+                window.alert("No puedo hacer descuento si no tengo nada");
+            }
+            if(precio>0)
+            {
+                if(descuento>0)
+                {
+                    let porcentaje = precio *(descuento/100);
+                    let final = precio - porcentaje;
+                }
+                
+            }
+           
+        }
+        document.getElementById("renta").innerHTML="the final price is :  "+ final+ " euros";
+
+    </script>
+
+    </body>
+
+</html>

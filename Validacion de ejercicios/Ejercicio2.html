@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <style>
+         div{
+            width: 200px; 
+            height: 200px; 
+            margin: 10px;      
+        }
+    </style>
+    <body>
+
+        <p>HTML VALIDACION CUADRADOS</p>
+
+        <div id="rojo" style="border: thick solid red; border-color: red; display: inline-block;"> </div>
+        <div id="azul" style="border: thick solid blue; border-color: blue; display: inline-block;"> </div>
+
+        <p>Introduce el tamaño del cuadrado rojo:</p>
+        <input id="id1">
+        <p>Introduce el tamaño del cuadrado azul;</p>
+        <input id="id2">
+
+        <button type ="button" onclick="Validar()" style="margin: 10px;">Apply</button>
+
+        <script>
+
+            function Validar() 
+            {
+                let number2 = document.getElementById("id1").value;
+                let number1 = document.getElementById("id2").value;
+
+                number1=Number(number1);
+
+                number2=Number(number2);
+               
+                if(number2 < 0)
+                {
+                    window.alert("el rojo no es valido");
+                }
+                if(number1 < 0)
+                {
+                    window.alert("el azul no es valido");
+                }
+
+
+                document.getElementById("rojo").style.height=number2+"px";
+                document.getElementById("rojo").style.width=number2+"px";
+
+                document.getElementById("azul").style.height=number1+"px";
+                document.getElementById("azul").style.width=number1+"px";
+                   
+            }    
+             
+            
+        </script>
+
+    </body>
+</html>
